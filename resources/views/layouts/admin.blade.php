@@ -109,6 +109,17 @@
                       <li>
                           <a href="#" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                       </li>
+                      <!-- users-->
+                      <li>
+                          <a href="#"><i class="fa fa-user fa-fw"></i> Users<span class="fa arrow"></span></a>
+                          <ul class="nav nav-second-level">
+                              <li>
+                                  <a href="#"><i class="fa fa-users fa-fw"></i> All Users</a>
+                                  <a href="#"><i class="fa fa-plus fa-fw"></i> AAdd Users</a>
+                              </li>
+                          </ul>
+                      </li>
+                      <!-- other comment -->
                       <li>
                           <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
                           <ul class="nav nav-second-level">
@@ -140,8 +151,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header"></h1>
-
+              <br>
                 @yield('content')
             </div>
             <!-- /.col-lg-12 -->
