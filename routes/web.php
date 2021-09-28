@@ -14,9 +14,11 @@ use Carbon\Carbon;
 Route::get('/', function () {
     return view('welcome');
 });
+
 Route::resource('admin/users', 'usersController');
 
 Auth::routes();
+
 Route::get('/admin', function(){
 
   return view('admin.index');

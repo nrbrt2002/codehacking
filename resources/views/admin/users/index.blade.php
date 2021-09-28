@@ -1,4 +1,3 @@
-<?php use Carbon\Carbon;  ?>
 @extends('layouts.admin')
 @section('content')
   <h1>Users</h1>
@@ -10,7 +9,7 @@
       <th>Role</th>
       <th>Active</th>
       <th>Created At</th>
-      <th>{{ Carbon::yesterday()->diffForHumans()}}</th>
+      {{-- <th>{{ Carbon::yesterday()->diffForHumans()}}</th> --}}
       <th>Updateed At</th>
     </tr>
     @foreach ($user as $user)
@@ -18,10 +17,10 @@
         <td>{{ $user->id  }}</td>
         <td>{{ $user->name }}</td>
         <td>{{ $user->email }}</td>
-        <td>{{ $user->role }}</td>
+        <td>{{ $user->role->name }}</td>
         <td>{{ $user->is_active ==1 ? 'Active' : 'Not Active' }}</td>
-        <td>{{ $user->created_at }}</td>
-        <td>{{ $user->updated_at }}</td>
+        <td>{{ $user->created_at->diffForHumans() }}</td>
+        <td>{{ $user->updated_at->diffForHumans()  }}</td>
 
       </tr>
     @endforeach

@@ -14,7 +14,7 @@ class AddProfilePictureToUserTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-          $table->string('profile_pic')->nullable();
+          $table->integer('photo_id')->nullable();
         });
     }
 
@@ -26,7 +26,7 @@ class AddProfilePictureToUserTable extends Migration
     public function down()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('profile_pic');
+            $table->dropColumn('photo_id');
         });
     }
 }

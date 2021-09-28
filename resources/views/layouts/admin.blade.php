@@ -1,3 +1,4 @@
+<?php use Carbon\Carbon;  ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -114,8 +115,8 @@
                           <a href="#"><i class="fa fa-user fa-fw"></i> Users<span class="fa arrow"></span></a>
                           <ul class="nav nav-second-level">
                               <li>
-                                  <a href="#"><i class="fa fa-users fa-fw"></i> All Users</a>
-                                  <a href="#"><i class="fa fa-plus fa-fw"></i> AAdd Users</a>
+                                  <a href=""><i class="fa fa-users fa-fw"></i> All Users</a>
+                                  <a href=""><i class="fa fa-plus fa-fw"></i> Add Users</a>
                               </li>
                           </ul>
                       </li>
